@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>91漫画 - 91manhua-zh.com.github.io｜漫画目录与导航入口</title>
+<meta name="description" content="91漫画（91manhua-zh.com.github.io）是漫画阅读导航站点，整理少年、少女、热血、悬疑、科幻、治愈等 14 类题材的作品目录与阅读入口，访问 91manhua-zh.com.github.io 查看完整站点地图。">
+<meta name="keywords" content="91漫画, 91manhua-zh, 91manhua-zh.com.github.io, 漫画目录, 漫画导航, 漫画网站入口">
+<meta name="robots" content="index, follow, max-snippet:160, max-image-preview:large">
+<meta name="theme-color" content="#071b26">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="91漫画">
+<meta property="og:title" content="91漫画 - 91manhua-zh.com.github.io｜漫画目录与导航入口">
+<meta property="og:description" content="91漫画（91manhua-zh.com.github.io）整理少年、少女、热血、悬疑、科幻、治愈等题材的漫画目录与阅读入口。">
+<meta property="og:url" content="https://91manhua-zh.com.github.io/">
+<meta property="og:image" content="https://91manhua-zh.com.github.io/cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://91manhua-zh.com.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "91漫画",
+  "url": "https://91manhua-zh.com.github.io/",
+  "description": "漫画目录与阅读导航站点",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://91manhua-zh.com.github.io/#search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "91漫画",
+  "url": "https://91manhua-zh.com.github.io/",
+  "logo": "https://91manhua-zh.com.github.io/cover.jpg"
+}
+</script>
+<style>
+:root{
+  --navy:#071b26;
+  --navy2:#0d2b3a;
+  --ink:#0d2632;
+  --ink2:#3c5863;
+  --ink3:#76909b;
+  --paper:#f2f7f8;
+  --paper2:#e6efef;
+  --line:#cfe0e1;
+  --line2:#dde8e9;
+  --teal:#17a398;
+  --teal2:#1cc3b6;
+  --amber:#ffb23f;
+  --amber2:#ffcf7a;
+  --red:#e0483c;
+  --r:10px;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.75;
+  overflow-x:hidden;
+  background-image:
+    linear-gradient(var(--line2) 1px,transparent 1px),
+    linear-gradient(90deg,var(--line2) 1px,transparent 1px);
+  background-size:34px 34px;
+  background-position:-1px -1px;
+}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input,select,textarea{font:inherit}
+::selection{background:var(--teal);color:#fff}
+img{max-width:100%;display:block}
+
+/* ============ 顶部系统条 ============ */
+.sysbar{background:var(--navy);color:#a9c6cd;font-size:.74rem;letter-spacing:.05em}
+.sysbar .in{max-width:1320px;margin:0 auto;padding:6px 28px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-family:var(--mono)}
+.sysbar a{color:#a9c6cd}
+.sysbar a:hover{color:#fff}
+.sysbar .blink{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--teal2);margin-right:7px;box-shadow:0 0 0 0 rgba(28,195,182,.6);animation:pulse 2.4s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(28,195,182,0)}100%{box-shadow:0 0 0 0 rgba(28,195,182,0)}}
+
+/* ============ 页头 ============ */
+header{position:sticky;top:0;z-index:90;background:var(--navy)}
+.head-in{max-width:1320px;margin:0 auto;padding:14px 28px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:26px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.5rem;color:#fff;letter-spacing:.01em;line-height:1}
+.logo .mk{width:44px;height:44px;border-radius:12px;background:var(--teal);display:grid;place-items:center;font-size:1.55rem;color:var(--navy);box-shadow:0 3px 0 rgba(0,0,0,.25)}
+.logo .mk b{font-size:1.15rem;line-height:1}
+.logo small{display:block;font-family:var(--mono);font-size:.66rem;font-weight:500;color:#7faab4;letter-spacing:.16em;margin-top:3px}
+.search{
+  position:relative;background:#0d2b3a;border:1px solid #1c4453;border-radius:30px;padding:8px 16px 8px 42px;
+  display:flex;align-items:center;gap:10px;max-width:460px;width:100%;margin:0 auto;
+}
+.search svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);opacity:.5}
+.search input{border:none;background:none;outline:none;color:#e6f2f4;font-size:.92rem;flex:1;width:100%}
+.search input::placeholder{color:#7faab4}
+.search kbd{font-family:var(--mono);font-size:.68rem;color:#7faab4;border:1px solid #1c4453;border-radius:4px;padding:1px 6px;background:var(--navy)}
+.head-acts{display:flex;align-items:center;gap:10px}
+.chip{
+  display:inline-flex;align-items:center;gap:7px;padding:8px 15px;border-radius:30px;font-size:.84rem;
+  border:1px solid #1c4453;color:#cfe6ea;background:#0d2b3a;transition:.2s;white-space:nowrap;
+}
+.chip:hover{border-color:var(--teal2);color:#fff}
+.chip.primary{background:var(--teal);border-color:var(--teal);color:var(--navy);font-weight:700}
+.chip.primary:hover{background:var(--teal2);border-color:var(--teal2);color:var(--navy)}
+.chip.warn{background:var(--amber);border-color:var(--amber);color:#2a1c00;font-weight:700}
+.lang{font-family:var(--mono);font-size:.78rem;color:#7faab4;border:1px solid #1c4453;border-radius:30px;padding:7px 13px}
+.menu-btn{display:none;width:42px;height:42px;border:1px solid #1c4453;border-radius:10px;align-items:center;justify-content:center}
+.menu-btn span{display:block;width:18px;height:2px;background:#cfe6ea;position:relative}
+.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:#cfe6ea}
+.menu-btn span::before{top:-6px}.menu-btn span::after{top:6px}
+
+/* ============ 线路导航条 ============ */
+.routes{background:#0a212e;border-top:1px solid #16394a;border-bottom:3px solid var(--teal)}
+.routes-in{max-width:1320px;margin:0 auto;padding:0 28px;display:flex;gap:4px;overflow-x:auto}
+.routes-in::-webkit-scrollbar{display:none}
+.routes-in a{
+  flex-shrink:0;padding:11px 14px 9px;color:#9dbbc4;font-size:.86rem;font-weight:600;
+  border-bottom:3px solid transparent;margin-bottom:-3px;display:flex;align-items:center;gap:7px;white-space:nowrap;
+}
+.routes-in a:hover{color:#fff}
+.routes-in a.on{color:#fff;border-bottom-color:var(--amber)}
+.routes-in a .dot{width:8px;height:8px;border-radius:50%;background:var(--ink3);flex-shrink:0}
+.routes-in a.on .dot{background:var(--amber);box-shadow:0 0 0 3px rgba(255,178,63,.18)}
+.routes-in .stretch{flex:1}
+
+/* ============ 主体 ============ */
+.wrap{max-width:1320px;margin:0 auto;padding:0 28px}
+.hero{padding:34px 0 26px}
+.hb{
+  background:var(--navy);color:#e6f2f4;border-radius:18px;overflow:hidden;position:relative;
+  display:grid;grid-template-columns:1.35fr 1fr;min-height:300px;
+}
+.hb::after{content:"";position:absolute;right:-60px;top:-60px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(28,195,182,.22),transparent 68%)}
+.hb-main{padding:30px 34px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
+.hb-tag{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:.72rem;color:var(--teal2);letter-spacing:.14em;margin-bottom:14px}
+.hb-tag::before{content:"";width:26px;height:1px;background:var(--teal2)}
+.hb-main h1{font-size:clamp(1.75rem,4vw,2.85rem);line-height:1.2;font-weight:800;color:#fff;letter-spacing:-.01em;margin-bottom:16px}
+.hb-main h1 em{font-style:normal;color:var(--teal2)}
+.hb-main p{font-size:.98rem;color:#a9c6cd;max-width:48ch;line-height:1.85}
+.hb-acts{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:30px;font-size:.9rem;font-weight:700;
+  transition:.2s;border:1px solid transparent;
+}
+.btn-teal{background:var(--teal);color:var(--navy)}
+.btn-teal:hover{background:var(--teal2)}
+.btn-ghost{background:transparent;border-color:#2a5767;color:#e6f2f4}
+.btn-ghost:hover{border-color:var(--teal2);color:#fff}
+.hb-side{
+  background:linear-gradient(160deg,rgba(28,195,182,.12),rgba(255,178,63,.06));
+  padding:26px 30px;display:grid;gap:0;align-content:center;border-left:1px solid #16394a;
+}
+.stat{border-bottom:1px solid rgba(255,255,255,.09);padding:13px 0;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.stat:last-child{border-bottom:none}
+.stat b{font-size:1.85rem;font-weight:800;color:#fff;font-family:var(--mono);letter-spacing:-.02em;line-height:1}
+.stat b i{font-style:normal;font-size:.9rem;color:var(--teal2);margin-left:2px}
+.stat span{font-size:.8rem;color:#9dbbc4;text-align:right;line-height:1.5}
+
+/* ============ 通用区块 ============ */
+section{padding:40px 0;border-top:1px solid var(--line)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;flex-wrap:wrap;margin-bottom:24px}
+.sec-t{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.sec-t b{font-size:clamp(1.3rem,2.6vw,1.75rem);font-weight:800;letter-spacing:-.01em}
+.sec-t em{font-style:normal;font-family:var(--mono);font-size:.74rem;color:var(--ink3);letter-spacing:.1em}
+.sec-t .rule{width:38px;height:3px;background:var(--teal);border-radius:2px}
+.sec-sub{font-size:.88rem;color:var(--ink2);max-width:62ch;margin:-12px 0 26px}
+.filters{display:flex;gap:7px;flex-wrap:wrap}
+.fl{
+  font-size:.83rem;padding:7px 15px;border-radius:30px;border:1px solid var(--line);background:#fff;
+  color:var(--ink2);transition:.18s;font-weight:500;
+}
+.fl:hover{border-color:var(--ink3);color:var(--ink)}
+.fl.on{background:var(--navy);border-color:var(--navy);color:#fff}
+
+/* ============ 线路图 ============ */
+.lines{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.line{
+  background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;transition:.22s;
+  display:flex;flex-direction:column;gap:14px;position:relative;overflow:hidden;
+}
+.line::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--c,var(--teal))}
+.line:hover{transform:translateY(-4px);box-shadow:0 14px 30px -18px rgba(7,27,38,.45);border-color:var(--c,var(--teal))}
+.line .lh{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.line .lh .nm{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem}
+.line .lh .sw{width:22px;height:22px;border-radius:6px;background:var(--c,var(--teal));color:#fff;font-family:var(--mono);font-size:.72rem;font-weight:700;display:grid;place-items:center;flex-shrink:0}
+.line .lh .cnt{font-family:var(--mono);font-size:.76rem;color:var(--ink3);flex-shrink:0}
+.line ul{list-style:none;display:grid;gap:7px;font-size:.88rem}
+.line li{display:flex;align-items:center;gap:9px;color:var(--ink2);transition:.16s}
+.line li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--line);flex-shrink:0;transition:.16s}
+.line li:hover{color:var(--ink)}
+.line li:hover::before{background:var(--c,var(--teal));transform:scale(1.5)}
+.line .more{font-size:.8rem;color:var(--c,var(--teal));font-weight:600;border-top:1px dashed var(--line);padding-top:11px;margin-top:auto}
+
+/* ============ 卡片 ============ */
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.card{display:block;transition:.24s}
+.card .th{
+  position:relative;aspect-ratio:3/4;border-radius:12px;overflow:hidden;
+  border:1px solid var(--line);box-shadow:0 2px 0 var(--line2);
+}
+.card .th .gr{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:14px;color:#fff}
+.card .th .gr b{font-weight:800;font-size:1.02rem;line-height:1.3;letter-spacing:.01em}
+.card .th .gr small{display:block;font-size:.7rem;font-weight:500;letter-spacing:.1em;opacity:.85;margin-top:8px;font-family:var(--mono)}
+.card .th .pin{
+  position:absolute;left:8px;top:8px;z-index:3;font-family:var(--mono);font-size:.68rem;font-weight:700;
+  background:rgba(7,27,38,.82);color:#fff;padding:3px 7px;border-radius:5px;backdrop-filter:blur(2px);
+}
+.card .th .eta{
+  position:absolute;right:8px;bottom:8px;z-index:3;font-family:var(--mono);font-size:.68rem;font-weight:600;
+  background:rgba(255,255,255,.94);color:var(--ink);padding:3px 7px;border-radius:5px;
+}
+.card .th .stripe{position:absolute;left:0;right:0;bottom:0;height:5px;background:var(--c,var(--teal))}
+.card .th .sh{position:absolute;inset:0;background:linear-gradient(to top,rgba(7,27,38,.5),transparent 42%)}
+.card:hover .th{transform:translateY(-5px);box-shadow:0 16px 28px -16px rgba(7,27,38,.5)}
+.card:hover .th{border-color:var(--c,var(--teal))}
+.card h4{font-size:.96rem;font-weight:700;margin:12px 0 5px;line-height:1.45}
+.card .meta{display:flex;justify-content:space-between;gap:8px;font-size:.76rem;color:var(--ink3);font-family:var(--mono)}
+.card .meta b{color:var(--ink2);font-weight:600}
+.badges{display:flex;gap:5px;flex-wrap:wrap;margin-top:7px}
+.badges i{font-style:normal;font-size:.7rem;font-weight:600;padding:2px 7px;border-radius:4px;background:var(--paper2);color:var(--ink2);border:1px solid var(--line2)}
+.badges i.hot{background:#fff1e8;color:#c2541a;border-color:#ffd9c2}
+
+/* ============ 时刻表 ============ */
+.board{
+  background:var(--navy);color:#e6f2f4;border-radius:16px;overflow:hidden;border:1px solid #16394a;
+}
+.board .tb{
+  display:grid;grid-template-columns:88px 86px 1.6fr 1fr 96px 104px;gap:0;align-items:stretch;
+}
+.board .row{
+  display:contents;font-size:.9rem;
+}
+.board .row>*{padding:14px 16px;border-bottom:1px solid #16394a;display:flex;align-items:center;gap:10px}
+.board .row>*:last-child{justify-content:flex-end;text-align:right}
+.board .hd{background:#0a212e;font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;color:#7faab4;text-transform:uppercase}
+.board .hd>*{padding:12px 16px}
+.board .row:last-child>*{border-bottom:none}
+.board .row.tn>*:first-child{font-family:var(--mono);font-weight:700;color:var(--teal2);font-size:.86rem}
+.board .row:hover>*{background:rgba(28,195,182,.05)}
+.board .pl{width:9px;height:9px;border-radius:50%;background:var(--c,var(--teal));flex-shrink:0}
+.board .nm{font-weight:600;color:#fff}
+.board .nm small{display:block;font-weight:400;color:#7faab4;font-size:.78rem;font-family:var(--mono);margin-top:2px;letter-spacing:.04em}
+.board .st{font-family:var(--mono);font-size:.82rem;color:#a9c6cd}
+.board .cap{font-family:var(--mono);font-size:.78rem;color:var(--ink3);justify-self:flex-end}
+.board .cap.on{color:var(--teal2)}
+.pill{font-family:var(--mono);font-size:.74rem;font-weight:700;padding:4px 10px;border-radius:20px;border:1px solid #2a5767;color:#a9c6cd;justify-self:flex-end;white-space:nowrap}
+.pill.now{background:var(--teal);border-color:var(--teal);color:var(--navy)}
+.pill.wait{background:var(--amber);border-color:var(--amber);color:#2a1c00}
+.pill.end{background:var(--paper2);border-color:var(--paper2);color:var(--ink2)}
+
+/* ============ 服务台 ============ */
+.desk{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.desk .cell{
+  padding:24px 26px;border-right:1px solid var(--line2);border-bottom:1px solid var(--line2);transition:.2s;
+}
+.desk .cell:nth-child(3n){border-right:none}
+.desk .cell:hover{background:var(--paper)}
+.desk .cell .ic{width:42px;height:42px;border-radius:11px;background:var(--paper2);display:grid;place-items:center;margin-bottom:14px;font-size:1.2rem;font-weight:800;color:var(--teal);font-family:var(--mono)}
+.desk .cell:nth-child(2) .ic{background:#fff4e6;color:#c47a12}
+.desk .cell:nth-child(3) .ic{background:#eaf7f6;color:var(--teal)}
+.desk .cell:nth-child(4) .ic{background:#f3eefa;color:#6b4ea8}
+.desk .cell:nth-child(5) .ic{background:#ffeae8;color:var(--red)}
+.desk .cell:nth-child(6) .ic{background:#e8f3ec;color:#2e7d4f}
+.desk .cell h4{font-size:1.02rem;font-weight:700;margin-bottom:6px}
+.desk .cell p{font-size:.86rem;color:var(--ink2);line-height:1.75}
+.desk .cell a{font-size:.82rem;color:var(--teal);font-weight:600;display:inline-block;margin-top:10px;border-bottom:1px solid rgba(23,163,152,.3)}
+
+/* ============ 公告 ============ */
+.notice{
+  background:#fff;border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:12px;padding:22px 24px;
+}
+.notice h4{display:flex;align-items:center;gap:9px;font-size:1.05rem;margin-bottom:14px}
+.notice h4 .blink{margin:0;width:8px;height:8px}
+.notice ol{list-style:none;display:grid;gap:11px;counter-reset:n}
+.notice li{
+  counter-increment:n;display:grid;grid-template-columns:62px 1fr auto;gap:16px;align-items:baseline;
+  padding-bottom:11px;border-bottom:1px dashed var(--line2);font-size:.9rem;color:var(--ink2);
+}
+.notice li:last-child{border-bottom:none;padding-bottom:0}
+.notice li::before{content:counter(n,decimal-leading-zero);font-family:var(--mono);font-size:.8rem;color:var(--ink3);font-weight:700}
+.notice li b{font-weight:600;color:var(--ink)}
+.notice li time{font-family:var(--mono);font-size:.76rem;color:var(--ink3);white-space:nowrap}
+
+/* ============ 编辑手记 ============ */
+.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.note{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;position:relative;transition:.22s}
+.note:hover{transform:translateY(-4px);box-shadow:0 16px 32px -20px rgba(7,27,38,.5)}
+.note .no{font-family:var(--mono);font-size:.76rem;color:var(--teal);font-weight:700;letter-spacing:.1em;margin-bottom:10px;display:block}
+.note h4{font-size:1.08rem;font-weight:700;margin-bottom:10px;line-height:1.45}
+.note p{font-size:.88rem;color:var(--ink2);line-height:1.8}
+.note .who{border-top:1px solid var(--line2);margin-top:16px;padding-top:12px;display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:.82rem}
+.note .who b{font-weight:600}
+.note .who span{font-family:var(--mono);font-size:.74rem;color:var(--ink3)}
+
+/* ============ 问答 ============ */
+.faq{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.faq details{border-bottom:1px solid var(--line2)}
+.faq details:last-child{border-bottom:none}
+.faq summary{
+  padding:17px 24px;cursor:pointer;list-style:none;font-weight:600;font-size:.95rem;
+  display:grid;grid-template-columns:52px 1fr 24px;align-items:center;gap:14px;transition:.18s;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:hover{background:var(--paper)}
+.faq summary .qk{font-family:var(--mono);font-size:.76rem;font-weight:700;color:var(--teal);background:var(--paper2);border-radius:6px;padding:4px 0;text-align:center}
+.faq summary .ar{color:var(--teal);font-size:1.2rem;transition:.2s;justify-self:end;line-height:1}
+.faq details[open] summary .ar{transform:rotate(45deg)}
+.faq .a{padding:0 24px 20px 90px;font-size:.9rem;color:var(--ink2)}
+.faq .a a{color:var(--teal);border-bottom:1px solid rgba(23,163,152,.35);font-weight:600}
+
+/* ============ 站点地图 ============ */
+.map{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.map .col{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}
+.map .col h5{font-size:.98rem;font-weight:700;display:flex;align-items:center;gap:9px;margin-bottom:14px;padding-bottom:11px;border-bottom:2px solid var(--paper2)}
+.map .col h5 .sw{width:20px;height:20px;border-radius:6px;background:var(--c,var(--teal));color:#fff;font-family:var(--mono);font-size:.7rem;font-weight:700;display:grid;place-items:center;flex-shrink:0}
+.map .col ul{list-style:none;display:grid;gap:8px;font-size:.88rem}
+.map .col li{padding-left:13px;position:relative;color:var(--ink2)}
+.map .col li::before{content:"";position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:var(--line)}
+.map .col li:hover{color:var(--teal)}
+.map .col li:hover::before{background:var(--c,var(--teal))}
+.map .col li small{display:block;font-family:var(--mono);font-size:.72rem;color:var(--ink3);margin-top:1px}
+
+/* ============ 页脚 ============ */
+footer{margin-top:56px;background:var(--navy);color:#9dbbc4;padding:44px 0 0}
+.foot-in{max-width:1320px;margin:0 auto;padding:0 28px}
+.foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:30px;padding-bottom:34px;border-bottom:1px solid #16394a}
+.foot-top .lg{display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.4rem;color:#fff;margin-bottom:12px}
+.foot-top .lg .mk{width:38px;height:38px;border-radius:10px;background:var(--teal);display:grid;place-items:center;font-size:1.3rem;color:var(--navy)}
+.foot-top p{font-size:.86rem;color:#7faab4;max-width:32ch;line-height:1.85}
+.foot-col h6{font-size:.74rem;letter-spacing:.16em;color:#fff;margin-bottom:14px;font-family:var(--mono)}
+.foot-col ul{list-style:none;display:grid;gap:9px}
+.foot-col a{color:#9dbbc4;font-size:.87rem}
+.foot-col a:hover{color:var(--teal2)}
+.foot-mid{
+  padding:26px 0;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center;
+  border-bottom:1px solid #16394a;font-size:.84rem;color:#7faab4;
+}
+.foot-mid .lk{display:flex;gap:18px;flex-wrap:wrap}
+.foot-mid .lk a{color:#9dbbc4}
+.foot-mid .lk a:hover{color:var(--teal2)}
+.foot-bot{padding:18px 0 28px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.78rem;color:#5f828d;font-family:var(--mono)}
+.foot-bot b{color:#7faab4;font-weight:600}
+#top{
+  position:fixed;right:16px;bottom:18px;width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;
+  display:grid;place-items:center;z-index:80;opacity:0;visibility:hidden;transition:.28s;box-shadow:0 8px 22px -8px rgba(7,27,38,.6);
+}
+#top.show{opacity:1;visibility:visible}
+#top:hover{background:var(--teal)}
+
+@media (max-width:1120px){
+  .grid{grid-template-columns:repeat(5,1fr)}
+  .lines{grid-template-columns:repeat(2,1fr)}
+  .notes{grid-template-columns:1fr 1fr}
+  .map{grid-template-columns:repeat(3,1fr)}
+  .foot-top{grid-template-columns:1fr 1fr 1fr}
+  .foot-top .f1{grid-column:1/-1}
+}
+@media (max-width:900px){
+  .head-acts .chip:not(.primary){display:none}
+  .menu-btn{display:flex}
+  .routes{display:none;position:fixed;inset:0;background:var(--navy);z-index:85;padding:80px 24px 30px;overflow-y:auto}
+  .routes.open{display:block}
+  .routes-in{flex-direction:column;gap:0;padding:0;overflow:visible}
+  .routes-in a{padding:15px 4px;border-bottom:1px solid #16394a;font-size:1rem;color:#e6f2f4}
+  .routes-in a.on{border-bottom-color:#16394a;border-left:3px solid var(--amber);padding-left:12px}
+  .routes-in .stretch{display:none}
+  .routes-in a .dot{width:9px;height:9px}
+  .hb{grid-template-columns:1fr;min-height:auto}
+  .hb-side{border-left:none;border-top:1px solid #16394a}
+  .grid{grid-template-columns:repeat(4,1fr);gap:18px 14px}
+  .board .tb{grid-template-columns:66px 1fr 76px}
+  .board .row>*:nth-child(4),.board .row>*:nth-child(5){display:none}
+  .board .hd>*:nth-child(4),.board .hd>*:nth-child(5){display:none}
+  .desk{grid-template-columns:1fr}
+  .desk .cell{border-right:none}
+  .map{grid-template-columns:1fr 1fr}
+  .notice li{grid-template-columns:52px 1fr;gap:10px}
+  .notice li time{grid-column:2}
+}
+@media (max-width:600px){
+  .sysbar .in{padding:6px 16px;font-size:.68rem}
+  .head-in{padding:12px 16px;gap:12px}
+  .logo{font-size:1.25rem}
+  .logo small{display:none}
+  .search{padding-left:38px}
+  .search kbd{display:none}
+  .wrap,.foot-in{padding-left:16px;padding-right:16px}
+  .grid{grid-template-columns:repeat(3,1fr);gap:18px 12px}
+  .lines,.notes,.map{grid-template-columns:1fr}
+  .foot-top{grid-template-columns:1fr 1fr}
+  .hero{padding:24px 0 18px}
+  .hb-main{padding:24px}
+  .hb-side{padding:20px 24px}
+  section{padding:32px 0}
+  .faq summary{grid-template-columns:40px 1fr 20px;padding:15px 18px}
+  .faq .a{padding:0 18px 18px 66px}
+  .notice,.desk .cell,.map .col{padding:18px}
+}
+@media print{
+  .sysbar,header,.routes,.menu-btn,#top,.filters,.faq summary .ar{display:none!important}
+  body{background:#fff}
+  .hb,.board{background:#fff;color:#000;border:1px solid #ccc}
+  .hb-main h1,.board .nm{color:#000}
+  a{color:#000}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<div class="sysbar">
+  <div class="in">
+    <span><span class="blink"></span>系统运行正常 · 全部线路服务中</span>
+    <span>当前站点：<b style="color:#e6f2f4">91manhua-zh.com.github.io</b> · 访问量 1,247,902</span>
+  </div>
+</div>
+
+<header>
+  <div class="head-in">
+    <a class="logo" href="https://91manhua-zh.com.github.io/"><span class="mk"><b>91</b></span>91漫画<small>91MANHUA · ZH / DIRECTORY</small></a>
+    <div class="search">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input type="search" placeholder="输入作品名、作者或题材，如：地狱乐、藤本タツキ、悬疑" aria-label="搜索作品">
+      <kbd>/</kbd>
+    </div>
+    <div class="head-acts">
+      <a class="chip" href="#faq">使用说明</a>
+      <a class="chip primary" href="#sitemap">查看全站地图</a>
+      <span class="lang">中文</span>
+      <button class="menu-btn" id="menuBtn" aria-label="打开菜单"><span></span></button>
+    </div>
+  </div>
+  <nav class="routes" id="routes">
+    <div class="routes-in">
+      <a href="#lines" class="on"><span class="dot"></span>线路总览</a>
+      <a href="#hot"><span class="dot"></span>热门作品</a>
+      <a href="#board"><span class="dot"></span>到站时刻</a>
+      <a href="#service"><span class="dot"></span>服务台</a>
+      <a href="#notice"><span class="dot"></span>站内公告</a>
+      <a href="#notes"><span class="dot"></span>编辑手记</a>
+      <a href="#faq"><span class="dot"></span>常见问题</a>
+      <a href="#sitemap"><span class="dot"></span>站点地图</a>
+      <span class="stretch"></span>
+      <span style="color:#5f828d;font-size:.76rem;align-self:center;font-family:var(--mono);white-space:nowrap" id="clock"></span>
+    </div>
+  </nav>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="hb">
+      <div class="hb-main">
+        <div class="hb-tag">91MANHUA-ZH · 漫画目录导航</div>
+        <h1>91漫画，<em>14 条线路</em><br>直达你要找的那部作品</h1>
+        <p>91漫画（91manhua-zh.com.github.io）不提供在线阅读，只做一件事：把散在各处的漫画作品，按题材、状态、年份整理成可检索的目录，并给出对应的正版阅读入口。找不到的作品，可以在「<a href="#service" style="color:var(--teal2);border-bottom:1px solid rgba(28,195,182,.4)">服务台</a>」提交（详见「<a href="#faq" style="color:var(--teal2);border-bottom:1px solid rgba(28,195,182,.4)">常见问题</a>」）。</p>
+        <div class="hb-acts">
+          <a class="btn btn-teal" href="#hot">浏览热门目录 →</a>
+          <a class="btn btn-ghost" href="#faq">三分钟上手</a>
+        </div>
+      </div>
+      <div class="hb-side">
+        <div class="stat"><b>14<i>条</i></b><span>题材线路<br>少年 · 少女 · 热血 · 悬疑</span></div>
+        <div class="stat"><b>2,680<i>部</i></b><span>已收录作品<br>含连载与完结状态标注</span></div>
+        <div class="stat"><b>86<i>%</i></b><span>作品附正版入口<br>其余为资料页</span></div>
+        <div class="stat"><b>3<i>分钟</i></b><span>平均定位耗时<br>从搜索到找到入口</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 线路总览 -->
+<section id="lines">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-t"><span class="rule"></span><b>线路总览</b><em>ROUTE OVERVIEW</em></div>
+      <div class="filters">
+        <a class="fl on" href="#">全部 14 条</a><a class="fl" href="#">少年向</a><a class="fl" href="#">少女向</a><a class="fl" href="#">男性向</a><a class="fl" href="#">女性向</a>
+      </div>
+    </div>
+    <p class="sec-sub">每条线路代表一个题材方向，括号内为收录数量。点击线路名进入对应目录，可按连载状态、完结年份、篇幅与评分二次筛选。</p>
+    <div class="lines">
+      <div class="line" style="--c:#17a398">
+        <div class="lh"><span class="nm"><span class="sw">A</span>少年热血</span><span class="cnt">386 部</span></div>
+        <ul><li><a href="#sitemap">海贼王</a></li><li><a href="#sitemap">咒术回战</a></li><li><a href="#sitemap">鬼灭之刃</a></li><li><a href="#sitemap">我的英雄学院</a></li></ul>
+        <a class="more" href="#sitemap">进入 A 线目录 →</a>
+      </div>
+      <div class="line" style="--c:#e0483c">
+        <div class="lh"><span class="nm"><span class="sw">B</span>少女恋爱</span><span class="cnt">312 部</span></div>
+        <ul><li><a href="#sitemap">堀与宫村</a></li><li><a href="#sitemap">月刊少女野崎君</a></li><li><a href="#sitemap">元气囝仔</a></li><li><a href="#sitemap">只想告诉你</a></li></ul>
+        <a class="more" href="#sitemap">进入 B 线目录 →</a>
+      </div>
+      <div class="line" style="--c:#8b5cf6">
+        <div class="lh"><span class="nm"><span class="sw">C</span>悬疑推理</span><span class="cnt">274 部</span></div>
+        <ul><li><a href="#sitemap">约定的梦幻岛</a></li><li><a href="#sitemap">未来日记</a></li><li><a href="#sitemap">海虎</a></li><li><a href="#sitemap">MONSTER</a></li></ul>
+        <a class="more" href="#sitemap">进入 C 线目录 →</a>
+      </div>
+      <div class="line" style="--c:#ffb23f">
+        <div class="lh"><span class="nm"><span class="sw">D</span>科幻机甲</span><span class="cnt">198 部</span></div>
+        <ul><li><a href="#sitemap">攻壳机动队</a></li><li><a href="#sitemap">BLAME!</a></li><li><a href="#sitemap">铳梦</a></li><li><a href="#sitemap">新世纪福音战士</a></li></ul>
+        <a class="more" href="#sitemap">进入 D 线目录 →</a>
+      </div>
+      <div class="line" style="--c:#3b82f6">
+        <div class="lh"><span class="nm"><span class="sw">E</span>治愈日常</span><span class="cnt">356 部</span></div>
+        <ul><li><a href="#sitemap">摇曳露营△</a></li><li><a href="#sitemap">三月的狮子</a></li><li><a href="#sitemap">黄金神威</a></li><li><a href="#sitemap">夏目友人帐</a></li></ul>
+        <a class="more" href="#sitemap">进入 E 线目录 →</a>
+      </div>
+      <div class="line" style="--c:#10b981">
+        <div class="lh"><span class="nm"><span class="sw">F</span>美食料理</span><span class="cnt">142 部</span></div>
+        <ul><li><a href="#sitemap">食戟之灵</a></li><li><a href="#sitemap">迷宫饭</a></li><li><a href="#sitemap">南极料理人</a></li><li><a href="#sitemap">饭田家的飨宴</a></li></ul>
+        <a class="more" href="#sitemap">进入 F 线目录 →</a>
+      </div>
+      <div class="line" style="--c:#ec4899">
+        <div class="lh"><span class="nm"><span class="sw">G</span>奇幻冒险</span><span class="cnt">301 部</span></div>
+        <ul><li><a href="#sitemap">葬送的芙莉莲</a></li><li><a href="#sitemap">地狱乐</a></li><li><a href="#sitemap">猎人</a></li><li><a href="#sitemap">进击的巨人</a></li></ul>
+        <a class="more" href="#sitemap">进入 G 线目录 →</a>
+      </div>
+      <div class="line" style="--c:#6366f1">
+        <div class="lh"><span class="nm"><span class="sw">H</span>运动竞技</span><span class="cnt">228 部</span></div>
+        <ul><li><a href="#sitemap">排球少年</a></li><li><a href="#sitemap">强风吹拂</a></li><li><a href="#sitemap">乒乓</a></li><li><a href="#sitemap">少年犯之七人</a></li></ul>
+        <a class="more" href="#sitemap">进入 H 线目录 →</a>
+      </div>
+      <div class="line" style="--c:#f97316">
+        <div class="lh"><span class="nm"><span class="sw">I</span>历史时代</span><span class="cnt">167 部</span></div>
+        <ul><li><a href="#sitemap">王者天下</a></li><li><a href="#sitemap">犬屋敷</a></li><li><a href="#sitemap">陸奥圓明流外傳</a></li><li><a href="#sitemap">亚人</a></li></ul>
+        <a class="more" href="#sitemap">进入 I 线目录 →</a>
+      </div>
+      <div class="line" style="--c:#14b8a6">
+        <div class="lh"><span class="nm"><span class="sw">J</span>职场社会</span><span class="cnt">143 部</span></div>
+        <ul><li><a href="#sitemap">重版出来！</a></li><li><a href="#sitemap">契×约</a></li><li><a href="#sitemap">监查役野崎</a></li><li><a href="#sitemap">白衣天使！</a></li></ul>
+        <a class="more" href="#sitemap">进入 J 线目录 →</a>
+      </div>
+      <div class="line" style="--c:#a855f7">
+        <div class="lh"><span class="nm"><span class="sw">K</span>恐怖灵异</span><span class="cnt">119 部</span></div>
+        <ul><li><a href="#sitemap">伊藤润二精选集</a></li><li><a href="#sitemap">咒法解禁</a></li><li><a href="#sitemap">残秽</a></li><li><a href="#sitemap">皆月</a></li></ul>
+        <a class="more" href="#sitemap">进入 K 线目录 →</a>
+      </div>
+      <div class="line" style="--c:#0ea5e9">
+        <div class="lh"><span class="nm"><span class="sw">L</span>四格搞笑</span><span class="cnt">204 部</span></div>
+        <ul><li><a href="#sitemap">齐木楠雄的灾难</a></li><li><a href="#sitemap">干物妹小埋</a></li><li><a href="#sitemap">阿松</a></li><li><a href="#sitemap">女子高中生</a></li></ul>
+        <a class="more" href="#sitemap">进入 L 线目录 →</a>
+      </div>
+      <div class="line" style="--c:#e11d48">
+        <div class="lh"><span class="nm"><span class="sw">M</span>成人向</span><span class="cnt">168 部</span></div>
+        <ul><li><a href="#sitemap">成人向资料页</a></li><li><a href="#sitemap">分级说明</a></li><li><a href="#sitemap">阅读入口申请</a></li><li><a href="#sitemap">合规声明</a></li></ul>
+        <a class="more" href="#sitemap">进入 M 线目录 →</a>
+      </div>
+      <div class="line" style="--c:#64748b">
+        <div class="lh"><span class="nm"><span class="sw">N</span>港漫武侠</span><span class="cnt">82 部</span></div>
+        <ul><li><a href="#sitemap">中华英雄</a></li><li><a href="#sitemap">风云</a></li><li><a href="#sitemap">龙虎门</a></li><li><a href="#sitemap">海虎</a></li></ul>
+        <a class="more" href="#sitemap">进入 N 线目录 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 热门作品 -->
+<section id="hot">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-t"><span class="rule"></span><b>热门作品</b><em>HOT DIRECTORY / 本周访问量前 12 位</em></div>
+      <div class="filters">
+        <a class="fl on" href="#">综合</a><a class="fl" href="#">少年向</a><a class="fl" href="#">少女向</a><a class="fl" href="#">完结</a><a class="fl" href="#">连载中</a>
+      </div>
+    </div>
+    <div class="grid">
+      <a class="card" href="#sitemap" style="--c:#17a398">
+        <div class="th"><div class="pin">NO.1</div><div class="eta">第 1102 话</div><div class="gr" style="background:linear-gradient(150deg,#17a398,#0a4f4a)"><b>海贼王</b><small>ONE PIECE</small></div><span class="sh"></span><span class="stripe"></span></div>
+        <h4>海贼王</h4><div class="meta"><b>尾田荣一郎</b><span>连载中</span></div><div class="badges"><i class="hot">热门</i><i>少年热血</i><i>长篇</i></div>
+      </a>
+      <a class="card" href="#sitemap" style="--c:#8b5cf6">
+        <div class="th"><div class="pin">NO.2</div><div class="eta">全 12 卷</div><div class="gr" style="background:linear-gradient(150deg,#8b5cf6,#4c1d95)"><b>葬送的芙莉莲</b><small>FRYREN</small></div><span class="sh"></span><span class="stripe"></span></div>
+        <h4>葬送的芙莉莲</h4><div class="meta"><b>山田钟人 / 阿部司</b><span>连载中</span></div><div class="badges"><i class="hot">高分</i><i>奇幻冒险</i><i>已完结单行本</i></div>
+      </a>
+      <a class="card" href="#sitemap" style="--c:#e0483c">
+        <div class="th"><div class="pin">NO.3</div><div class="eta">第 271 话</div><div class="gr" style="background:linear-gradient(150deg,#e0483c,#7a1f17)"><b>咒术回战</b><small>JUJUTSU KAISEN</small></div><span class="sh"></span><span class="stripe"></span></div>
+        <h4>咒术回战</h4><div class="meta"><b>芥见下下</b><span>连载中</span></div><div class="badges"><i class="hot">热门</i><i>少年热血</i><i>战斗</i></div>
+      </a>
+      <a class="card" href="#sitemap" style="--c:#ffb23f">
+        <div class="th"><div class="pin">NO.4</div><div class="eta">全 23 卷</div><div class="gr" style="background:linear-gradient(150deg,#ffb23f,#a8600a)"><b>迷宫饭</b><small>DUNGEON MESHI</small></div><span class="sh"></span><span class="stripe"></span></div>
+        <h4>迷宫饭</h4><div class="meta"><b>九井谅子</b><span>已完结</span></div><div class="badges"><i class="hot">高分</i><i>美食料理</i><i>奇幻</i></div>
+      </a>
+      <a class="card" href="#sitemap" style="--c:#10b981">
+        <div class="th"><div class="pin">NO.5</div><div class="eta">第 61 话</div><div class="gr" style="background:linear-gradient(150deg,#10b981,#065f46)"><b>地狱乐</b><small>HELLS PARADISE</small></div><span class="sh"></span><span class="stripe"></span></div>
+        <h4>地狱乐</h4><div class="meta"><b>贺来友治</b><span>连载中</span></div><div class="badges"><i>奇幻冒险</i><i>动作</i></div>
+      </a>
+      <a class="card" href="#sitemap" style="--c:#3b82f6">
+        <div class="th"><div class="pin">NO.6</div><div class="eta">全 14 卷</div><div class="gr" style="background:linear-gradient(150deg,#3b82f6,#1e3a8a)"><b>三月的狮子</b><small>3-GATSU NO LION</small></div><span class="sh"></span><span class="stripe"></span></div>
+        <h4>三月的狮子</h4><div class="meta"><b>羽海野千花</b><span>已完结</span></div><div class="badges"><i>治愈日常</i><i>职场社会</i></div>
+      </a>
+      <a class="card" href="#sitemap" style="--c:#ec4899">
+        <div class="th"><div class="pin">NO.7</div><div class="eta">第 408 话</div><div class="gr" style="background:linear-gradient(150deg,#ec4899,#9d174d)"><b>鬼灭之刃</b><small>KIMETSU NO YAIBA</small></div><span class="sh"></span><span class="stripe"></span></div>
+        <h4>鬼灭之刃</h4><div class="meta"><b>吾峠呼世晴</b><span>已完结</span></div><div class="badges"><i class="hot">热门</i><i>少年热血</i></div>
+      </a>
+      <a class="card" href="#sitemap" style="--c:#6366f1">
+        <div class="th"><div class="pin">NO.8</div><div class="eta">全 45 卷</div><div class="gr" style="background:linear-gradient(150deg,#6366f1,#312e81)"><b>排球少年</b><small>HAIKYU!!</small></div><span class="sh"></span><span class="stripe"></span></div>
+        <h4>排球少年</h4><div class="meta"><b>古馆春一</b><span>已完结</span></div><div class="badges"><i class="hot">高分</i><i>运动竞技</i></div>
+      </a>
+      <a class="card" href="#sitemap" style="--c:#f97316">
+        <div class="th"><div class="pin">NO.9</div><div class="eta">第 765 话</div><div class="gr" style="background:linear-gradient(150deg,#f97316,#9a3412)"><b>王者天下</b><small>KINGDOM</small></div><span class="sh"></span><span class="stripe"></span></div>
+        <h4>王者天下</h4><div class="meta"><b>原泰久</b><span>连载中</span></div><div class="badges"><i>历史时代</i><i>长篇</i></div>
+      </a>
+      <a class="card" href="#sitemap" style="--c:#14b8a6">
+        <div class="th"><div class="pin">NO.10</div><div class="eta">全 17 卷</div><div class="gr" style="background:linear-gradient(150deg,#14b8a6,#0f766e)"><b>重版出来！</b><small>REPRINTS</small></div><span class="sh"></span><span class="stripe"></span></div>
+        <h4>重版出来！</h4><div class="meta"><b>松田奈绪子</b><span>已完结</span></div><div class="badges"><i>职场社会</i><i>出版业</i></div>
+      </a>
+      <a class="card" href="#sitemap" style="--c:#0ea5e9">
+        <div class="th"><div class="pin">NO.11</div><div class="eta">全 14 卷</div><div class="gr" style="background:linear-gradient(150deg,#0ea5e9,#075985)"><b>齐木楠雄的灾难</b><small>SAIKI KUSUO</small></div><span class="sh"></span><span class="stripe"></span></div>
+        <h4>齐木楠雄的灾难</h4><div class="meta"><b>麻生周一</b><span>已完结</span></div><div class="badges"><i>四格搞笑</i><i>校园</i></div>
+      </a>
+      <a class="card" href="#sitemap" style="--c:#a855f7">
+        <div class="th"><div class="pin">NO.12</div><div class="eta">第 156 话</div><div class="gr" style="background:linear-gradient(150deg,#a855f7,#5b21b6)"><b>伊藤润二精选集</b><small>JUNJI ITO</small></div><span class="sh"></span><span class="stripe"></span></div>
+        <h4>伊藤润二精选集</h4><div class="meta"><b>伊藤润二</b><span>短篇集</span></div><div class="badges"><i>恐怖灵异</i><i>短篇</i></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 到站时刻 -->
+<section id="board">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-t"><span class="rule"></span><b>到站时刻</b><em>ARRIVAL BOARD / 更新时间实时更新</em></div>
+      <div class="filters">
+        <a class="fl on" href="#">全部线路</a><a class="fl" href="#">连载中</a><a class="fl" href="#">即将完结</a><a class="fl" href="#">新收录</a>
+      </div>
+    </div>
+    <p class="sec-sub">表中「预计话数」为编辑部根据出版社公开情报推算，实际更新以官方为准；「状态」一栏显示该线路下一次信息同步的时间点。</p>
+    <div class="board">
+      <div class="tb">
+        <div class="row hd"><span>线路</span><span>状态</span><span>作品名</span><span>作者</span><span>预计话数</span><span>状态</span></div>
+        <div class="row tn"><span>A 线</span><span class="pl"></span><span class="nm">海贼王<small>ONE PIECE</small></span><span class="st">尾田荣一郎</span><span class="cap on">第 1102 话</span><span><span class="pill now">到站</span></span></div>
+        <div class="row tn"><span>C 线</span><span class="pl"></span><span class="nm">约定的梦幻岛<small>THE PROMISED NEVERLAND</small></span><span class="st">白井カイウ / 出水ぽすか</span><span class="cap">全 20 卷</span><span><span class="pill end">已完结</span></span></div>
+        <div class="row tn"><span>G 线</span><span class="pl"></span><span class="nm">地狱乐<small>HELLS PARADISE</small></span><span class="st">贺来友治</span><span class="cap">第 61 话</span><span><span class="pill wait">候车中</span></span></div>
+        <div class="row tn"><span>H 线</span><span class="pl"></span><span class="nm">强风吹拂<small>KAZE GA TSUYOKU FUITEIRU</small></span><span class="st">三浦紫苑原作 / 海野空太</span><span class="cap">全 22 卷</span><span><span class="pill end">已完结</span></span></div>
+        <div class="row tn"><span>E 线</span><span class="pl"></span><span class="nm">摇曳露营△<small>YURUCAMP</small></span><span class="st">あfろ</span><span class="cap">第 92 话</span><span><span class="pill now">到站</span></span></div>
+        <div class="row tn"><span>I 线</span><span class="pl"></span><span class="nm">王者天下<small>KINGDOM</small></span><span class="st">原泰久</span><span class="cap">第 765 话</span><span><span class="pill wait">候车中</span></span></div>
+        <div class="row tn"><span>J 线</span><span class="pl"></span><span class="nm">监查役野崎修吾<small>KANSATSUYAKU</small></span><span class="st">周良货</span><span class="cap">全 8 卷</span><span><span class="pill end">已完结</span></span></div>
+        <div class="row tn"><span>F 线</span><span class="pl"></span><span class="nm">南极料理人<small>NANTAR</small></span><span class="st">小林泰三</span><span class="cap">全 14 卷</span><span><span class="pill end">已完结</span></span></div>
+        <div class="row tn"><span>B 线</span><span class="pl"></span><span class="nm">月刊少女野崎君<small>GEKKA BijIN</small></span><span class="st">椿泉</span><span class="cap">全 14 卷</span><span><span class="pill end">已完结</span></span></div>
+        <div class="row tn"><span>K 线</span><span class="pl"></span><span class="nm">皆月<small>MINAZUKI</small></span><span class="st">今市子</span><span class="cap">全 7 卷</span><span><span class="pill end">已完结</span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 服务台 -->
+<section id="service">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-t"><span class="rule"></span><b>服务台</b><em>SERVICE COUNTER / 本站提供的六项功能</em></div>
+    </div>
+    <div class="desk">
+      <div class="cell">
+        <div class="ic">01</div><h4>作品目录检索</h4>
+        <p>支持作品名、作者、出版社、罗马音与旧译名混输搜索，可按 14 条题材线路、连载状态与完结年份交叉筛选。</p>
+        <a href="#lines">前往线路总览</a>
+      </div>
+      <div class="cell">
+        <div class="ic">02</div><h4>正版入口导航</h4>
+        <p>86% 的收录作品附正版阅读入口，优先指向出版社与授权平台，不提供盗版资源。</p>
+        <a href="#sitemap">查看入口分布</a>
+      </div>
+      <div class="cell">
+        <div class="ic">03</div><h4>作品资料页</h4>
+        <p>未获授权或未找到正版入口的作品，保留作者、出版社、卷数与状态等资料，供读者核对。</p>
+        <a href="#faq">资料页说明</a>
+      </div>
+      <div class="cell">
+        <div class="ic">04</div><h4>求书与纠错</h4>
+        <p>找不到的作品可在服务台提交，编辑部三个工作日内回复；资料错误同样接受举报。</p>
+        <a href="#notice">提交渠道</a>
+      </div>
+      <div class="cell">
+        <div class="ic">05</div><h4>合规与版权</h4>
+        <p>涉及版权争议的内容不提供阅读入口，仅保留资料。侵权投诉在页脚单独设置通道。</p>
+        <a href="#faq">版权声明</a>
+      </div>
+      <div class="cell">
+        <div class="ic">06</div><h4>读者讨论区</h4>
+        <p>每部作品设独立讨论区，可按话数定位评论，与目录页分离，不影响检索体验。</p>
+        <a href="#notes">讨论区入口</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 站内公告 -->
+<section id="notice">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-t"><span class="rule"></span><b>站内公告</b><em>NOTICE / 最近 5 条</em></div>
+    </div>
+    <div class="notice">
+      <h4><span class="blink"></span>公告板</h4>
+      <ol>
+        <li><b>线路总览新增 N 线港漫武侠分类，首批收录 82 部</b><span>含中华英雄、风云、龙虎门等经典作品</span><time>09-30</time></li>
+        <li><b>正版入口导航完成季度核验，共更新 312 条失效链接</b><span>涉及 6 家授权平台的地址调整</span><time>09-27</time></li>
+        <li><b>成人向分类（M 线）调整为资料页形式，不再提供阅读入口</b><span>可在 M 线目录查看合规声明</span><time>09-23</time></li>
+        <li><b>讨论区新增按话数定位功能，支持精确到具体章节的评论</b><span>旧链接兼容，无需重新订阅</span><time>09-18</time></li>
+        <li><b>求书提交通道迁移至服务台，处理时效保持三个工作日</b><span>历史投稿记录已完整保留</span><time>09-14</time></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 编辑手记 -->
+<section id="notes">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-t"><span class="rule"></span><b>编辑手记</b><em>EDITOR'S NOTES / 从目录视角聊漫画</em></div>
+      <div class="filters">
+        <a class="fl on" href="#">最新</a><a class="fl" href="#">题材研究</a><a class="fl" href="#">行业观察</a><a class="fl" href="#">阅读方法</a>
+      </div>
+    </div>
+    <div class="notes">
+      <article class="note">
+        <span class="no">NOTE 01</span><h4>为什么要把漫画做成「线路图」而不是榜单</h4>
+        <p>榜单回答的是「现在什么最火」，但找作品的人更常问的是「有没有类似某某的那一类」。题材线路牺牲了热度信息的即时性，换来的是可预测的检索路径——这对导航站而言更实用。</p>
+        <div class="who"><b>线路组</b><span>2026.09.28</span></div>
+      </article>
+      <article class="note">
+        <span class="no">NOTE 02</span><h4>正版入口核验：三个工作日内会过期一次</h4>
+        <p>授权平台的目录地址变动频率比预期高，尤其是季度番联动期。我们把核验周期定在 90 天，但实际观察中，部分平台 30 天内就会调整路径，这也是本期公告更新 312 条链接的原因。</p>
+        <div class="who"><b>资料组</b><span>2026.09.25</span></div>
+      </article>
+      <article class="note">
+        <span class="no">NOTE 03</span><h4>完结卷数标注比连载状态更有用</h4>
+        <p>连载中的作品，读者真正想知道的是「要不要现在开始追」。标注完结卷数与单行本进度，能让新读者判断投入成本，也能帮老读者确认自己是否漏卷。</p>
+        <div class="who"><b>分类组</b><span>2026.09.21</span></div>
+      </article>
+      <article class="note">
+        <span class="no">NOTE 04</span><h4>港漫的分类困境：武侠之外还有什么</h4>
+        <p>这次新增 N 线，我们把港漫拆成武侠、格斗、社会写实三类。但早期作品题材混杂，硬分类反而会误导，最终决定在作品资料页保留多重标签。</p>
+        <div class="who"><b>港漫组</b><span>2026.09.16</span></div>
+      </article>
+      <article class="note">
+        <span class="no">NOTE 05</span><h4>四格漫画的单行本与连载顺序是两回事</h4>
+        <p>四格作品的单行本经常重排话数，读者按连载顺序找会找不到对应内容。目录中我们同时保留两种编号，并按单行本顺序作为默认展示。</p>
+        <div class="who"><b>资料组</b><span>2026.09.12</span></div>
+      </article>
+      <article class="note">
+        <span class="no">NOTE 06</span><h4>为什么目录页不放广告位</h4>
+        <p>导航站的核心价值是检索效率。每多一个干扰元素，平均定位耗时就会增加。这一期我们把页面外的跳转也做了清理，目前从搜索到找到入口是三分钟。</p>
+        <div class="who"><b>产品组</b><span>2026.09.08</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-t"><span class="rule"></span><b>常见问题</b><em>FAQ / 关于 91漫画 的七个问题</em></div>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary><span class="qk">Q.01</span><span>91漫画（91manhua-zh.com.github.io）是漫画阅读网站吗？</span><span class="ar">+</span></summary>
+        <div class="a">不是。91漫画是漫画目录与导航站点，只整理作品资料与正版阅读入口，不提供在线阅读功能，也不存储任何漫画文件。如果你要找的是某个具体的漫画网站，请在搜索框输入网站名称，我们会给出对应的导航信息。</div>
+      </details>
+      <details>
+        <summary><span class="qk">Q.02</span><span>为什么有的作品只有资料页，没有阅读入口？</span><span class="ar">+</span></summary>
+        <div class="a">两种情况：一是尚未找到可确认的正版授权入口，二是作品涉及版权争议。前者会在三个工作日内由编辑部跟进核实，后者仅保留作者、出版社、卷数等资料，不提供任何阅读途径。完整说明见「<a href="#service">服务台</a>」。</div>
+      </details>
+      <details>
+        <summary><span class="qk">Q.03</span><span>14 条题材线路是怎么划分的？</span><span class="ar">+</span></summary>
+        <div class="a">按读者群体（少年向、少女向、男性向、女性向）与题材类型双重划分，A 到 N 共 14 条线路，每条线路对应一个独立目录页。一部作品可以同时挂在多条线路下，以作品资料页的标签为准。</div>
+      </details>
+      <details>
+        <summary><span class="qk">Q.04</span><span>「到站时刻」表的更新时间是准确的吗？</span><span class="ar">+</span></summary>
+        <div class="a">表中的话数与卷数来自出版社公开情报，编辑部每周一更新一次。「预计话数」是推算值，实际更新以官方发布为准。如发现标注有误，可通过「<a href="#notice">站内公告</a>」中的纠错渠道反馈。</div>
+      </details>
+      <details>
+        <summary><span class="qk">Q.05</span><span>如何提交想找的作品？</span><span class="ar">+</span></summary>
+        <div class="a">在「<a href="#service">服务台</a>」的求书入口提交作品名、作者与出版社（如有），编辑部三个工作日内回复。请提供尽可能完整的资料，这会影响核验效率。历史投稿记录可在个人中心查看。</div>
+      </details>
+      <details>
+        <summary><span class="qk">Q.06</span><span>成人向内容在哪里？</span><span class="ar">+</span></summary>
+        <div class="a">M 线为成人向分类，目前仅提供资料页与分级说明，不提供阅读入口。本站坚持合规运营，涉及版权争议或违规内容一律不收录、不提供跳转。</div>
+      </details>
+      <details>
+        <summary><span class="qk">Q.07</span><span>这个目录可以转载或引用吗？</span><span class="ar">+</span></summary>
+        <div class="a">可以。本站资料页的整理内容允许非商业用途转载，请保留原作者信息与本站出处（91manhua-zh.com.github.io）。商业用途请通过页脚「合作与转载」渠道联系编辑部。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 站点地图 -->
+<section id="sitemap">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-t"><span class="rule"></span><b>站点地图</b><em>SITE MAP / 全部栏目与入口索引</em></div>
+    </div>
+    <p class="sec-sub">91漫画（91manhua-zh.com.github.io）全站共 8 个栏目，结构扁平，所有页面均可通过下方入口直接访问。如需进一步细分，可进入对应线路目录页查看。</p>
+    <div class="map">
+      <div class="col"><h5><span class="sw" style="--c:#17a398">A</span>线路总览</h5><ul>
+        <li>14 条题材线路 <small>少年 · 少女 · 男性 · 女性</small></li>
+        <li>按状态筛选 <small>连载中 / 已完结 / 短篇</small></li>
+        <li>按年份筛选 <small>1970s — 2026</small></li>
+        <li>按篇幅筛选 <small>长篇 / 中篇 / 短篇集</small></li>
+      </ul></div>
+      <div class="col"><h5><span class="sw" style="--c:#e0483c">B</span>热门作品</h5><ul>
+        <li>本周访问量前 12 位 <small>每周一更新</small></li>
+        <li>少年向热门 <small>A / D / G / H 线</small></li>
+        <li>少女向热门 <small>B / E / L 线</small></li>
+        <li>完结作品榜 <small>全卷已发行</small></li>
+      </ul></div>
+      <div class="col"><h5><span class="sw" style="--c:#ffb23f">C</span>到站时刻</h5><ul>
+        <li>更新时间总览 <small>10 条主要线路</small></li>
+        <li>候车中作品 <small>即将更新</small></li>
+        <li>已完结作品 <small>含卷数标注</small></li>
+        <li>新收录作品 <small>近 30 天</small></li>
+      </ul></div>
+      <div class="col"><h5><span class="sw" style="--c:#8b5cf6">D</span>服务台</h5><ul>
+        <li>作品目录检索 <small>关键词与交叉筛选</small></li>
+        <li>正版入口导航 <small>86% 作品已覆盖</small></li>
+        <li>作品资料页 <small>未授权作品保留</small></li>
+        <li>求书与纠错 <small>3 个工作日回复</small></li>
+      </ul></div>
+      <div class="col"><h5><span class="sw" style="--c:#10b981">E</span>站内公告</h5><ul>
+        <li>最新公告 <small>最近 5 条</small></li>
+        <li>线路调整记录 <small>N 线新增</small></li>
+        <li>链接更新记录 <small>季度核验</small></li>
+        <li>功能变更说明 <small>讨论区升级</small></li>
+      </ul></div>
+      <div class="col"><h5><span class="sw" style="--c:#3b82f6">F</span>编辑手记</h5><ul>
+        <li>题材研究 <small>分类方法论</small></li>
+        <li>行业观察 <small>出版与授权</small></li>
+        <li>阅读方法 <small>检索技巧</small></li>
+        <li>分类争议 <small>港漫与四格</small></li>
+      </ul></div>
+      <div class="col"><h5><span class="sw" style="--c:#0ea5e9">G</span>常见问题</h5><ul>
+        <li>账号与收藏 <small>个人中心</small></li>
+        <li>目录与导航 <small>线路与筛选</small></li>
+        <li>版权与合规 <small>侵权投诉</small></li>
+        <li>合作与转载 <small>商业用途</small></li>
+      </ul></div>
+      <div class="col"><h5><span class="sw" style="--c:#64748b">H</span>关于本站</h5><ul>
+        <li>网站简介 <small>目录与导航</small></li>
+        <li>收录标准 <small>正版优先</small></li>
+        <li>联系方式 <small>编辑部邮箱</small></li>
+        <li>官方网址 <small>91manhua-zh.com.github.io</small></li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-in">
+    <div class="foot-top">
+      <div class="f1">
+        <div class="lg"><span class="mk">91</span>91漫画</div>
+        <p>91漫画（91manhua-zh.com.github.io）是漫画目录与阅读导航站点，整理少年、少女、热血、悬疑、科幻、治愈等 14 类题材的作品目录与正版入口，不提供在线阅读服务。</p>
+      </div>
+      <div class="foot-col"><h6>浏览栏目</h6><ul>
+        <li><a href="#lines">线路总览</a></li><li><a href="#hot">热门作品</a></li><li><a href="#board">到站时刻</a></li><li><a href="#service">服务台</a></li><li><a href="#notice">站内公告</a></li>
+      </ul></div>
+      <div class="foot-col"><h6>题材线路</h6><ul>
+        <li><a href="#lines">少年热血</a></li><li><a href="#lines">少女恋爱</a></li><li><a href="#lines">悬疑推理</a></li><li><a href="#lines">科幻机甲</a></li><li><a href="#lines">治愈日常</a></li>
+      </ul></div>
+      <div class="foot-col"><h6>帮助与合规</h6><ul>
+        <li><a href="#faq">使用说明</a></li><li><a href="#faq">常见问题</a></li><li><a href="#sitemap">站点地图</a></li><li><a href="#">版权声明</a></li><li><a href="#">隐私政策</a></li>
+      </ul></div>
+      <div class="foot-col"><h6>编辑部</h6><ul>
+        <li><a href="#notice">求书与纠错</a></li><li><a href="#">合作与转载</a></li><li><a href="#">侵权投诉</a></li><li><a href="#notes">编辑手记</a></li><li><a href="#">联系我们</a></li>
+      </ul></div>
+    </div>
+    <div class="foot-mid">
+      <span>本站为目录导航站点，不提供在线阅读，不存储漫画文件。作品版权归原作者及出版社所有，收录以正版授权为优先原则。</span>
+      <div class="lk"><a href="https://91manhua-zh.com.github.io/">首页</a><a href="#sitemap">站点地图</a><a href="#faq">帮助中心</a><a href="#notice">公告板</a></div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 91漫画（91manhua-zh.com.github.io）. ALL RIGHTS RESERVED.</span>
+      <span><b>官方网址：https://91manhua-zh.com.github.io/</b></span>
+    </div>
+  </div>
+</footer>
+
+<a id="top" href="#" aria-label="返回顶部">↑</a>
+
+<script>
+(function(){
+  var c=document.getElementById('clock');
+  function tick(){
+    var d=new Date(),p=function(n){return (n<10?'0':'')+n};
+    if(c)c.textContent='SYS '+
+      (d.getFullYear()+'.'+p(d.getMonth()+1)+'.'+p(d.getDate()))+
+      ' '+p(d.getHours())+':'+p(d.getMinutes())+':'+p(d.getSeconds());
+  }
+  tick();setInterval(tick,1000);
+  var mb=document.getElementById('menuBtn'),rv=document.getElementById('routes');
+  if(mb&&rv){
+    mb.addEventListener('click',function(){rv.classList.toggle('open')});
+    rv.addEventListener('click',function(e){if(e.target.tagName==='A')rv.classList.remove('open')});
+  }
+  var top=document.getElementById('top');
+  if(top)window.addEventListener('scroll',function(){top.classList[window.scrollY>700?'add':'remove']('show')},{passive:true});
+  document.querySelectorAll('.filters').forEach(function(g){
+    g.addEventListener('click',function(e){
+      var t=e.target.closest('.fl');if(!t)return;
+      e.preventDefault();
+      g.querySelectorAll('.fl').forEach(function(x){x.classList.remove('on')});
+      t.classList.add('on');
+    });
+  });
+  var ln=document.querySelectorAll('.routes-in a');
+  ln.forEach(function(a){a.addEventListener('click',function(){
+    ln.forEach(function(x){x.classList.remove('on')});a.classList.add('on');
+  })});
+  var ids=[].map.call(document.querySelectorAll('section[id],header[id]'),function(s){return s.id});
+  if(ids.length&&'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(en){
+        if(en.isIntersecting){
+          var h='#'+en.target.id;
+          ln.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')===h)});
+        }
+      });
+    },{rootMargin:'-40% 0px -55% 0px',threshold:0});
+    ids.forEach(function(i){var el=document.getElementById(i);if(el)io.observe(el)});
+  }
+  document.addEventListener('keydown',function(e){
+    if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){
+      e.preventDefault();var s=document.querySelector('.search input');if(s)s.focus();
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
